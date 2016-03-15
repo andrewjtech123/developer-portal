@@ -1,0 +1,82 @@
+# project definitions
+project: nurego_generic
+audience: generic
+product: all
+platform: all
+version: all
+output: web
+destination: ../doc_outputs/nurego/generic
+topnav_title: Nurego Developer Documentation
+homepage_title: Jekyll doc theme for designers
+site_title: Jekyll theme for designers
+project_folder: nurego
+company_name: nurego
+footer_image_location: ../../nurego/images/nurego_logo.jpeg
+github_editme_path: tomjohnson1492/documentation-theme-jekyll/edit/reviews
+disqus_shortname: andrewjtech123
+# variables
+
+
+sidebar_tagline: Designers
+sidebar_version: Version 4.0
+theme_file: theme-green.css
+pdf_file_name: nurego_generic_pdf.pdf
+
+# the algolia entries here are experimental only.
+
+#gems:
+#  - algoliasearch-jekyll
+#algolia:
+#  application_id: 'HXUBJERYYB'
+#  index_name:     'documentation_theme_jekyll_designers'
+port: 4009
+
+exclude:
+  - _site
+  - _drafts
+  - configs/
+  - doc/nurego_predix*
+  - mydoc
+
+# same for all
+host: 127.0.0.1
+feedback_email: tomjohnson1492@gmail.com
+
+# these settings should work, but they don't seem to apply the right highlighting
+
+#highlighter: rouge
+#markdown: kramdown
+#kramdown:
+#  input: GFM
+#  auto_ids: true
+#  hard_wrap: false
+#  syntax_highlighter: rouge
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
+
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true

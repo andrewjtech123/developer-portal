@@ -1,0 +1,84 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+# Sidebar
+entries:
+- title: Sidebar
+  subcategories:
+  - title:
+    audience: generic, predix
+    platform: all
+    product: all
+    version: all
+    output: web
+    type: frontmatter
+    items:
+    - title:
+      url: /titlepage.html
+      audience: generic, predix
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      audience: generic, predix
+      platform: all
+      product: all
+      version: all
+      output: web
+      type: frontmatter
+
+  - title: Overview
+    audience: generic, predix
+    platform: all
+    product: all
+    version: all
+    output: web
+    items:
+    - title: Overview
+      url: /nurego/nurego_overview.html
+      audience: generic, predix
+      platform: all
+      product: all
+      version: all
+      output: web
+
+  - title: Development
+    audience: generic, predix
+    platform: all
+    product: all
+    version: all
+    output: web
+    items:
+
+    - title: Development overview
+      url: /nurego/nurego_integrations.html
+      audience: generic, predix
+      platform: all
+      product: all
+      version: all
+      output: web
+
+      thirdlevel:
+      - title: Integrations
+        audience: generic, predix
+        platform: all
+        version: all
+        product: all
+        output: web
+        thirdlevelitems:
+        - title: Java
+          url: /nurego/nurego_java.html
+          audience: generic, predix
+          platform: all
+          version: all
+          product: all
+          output: web
+        - title: Ruby
+          url: /nurego/nurego_java.html
+          audience: generic, predix
+          platform: all
+          version: all
+          product: all
+          output: web

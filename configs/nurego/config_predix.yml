@@ -1,0 +1,80 @@
+# project definitions
+project: nurego_predix
+audience: predix
+product: doc
+platform: all
+version: all
+output: web
+destination: ../doc_outputs/nurego/predix
+topnav_title: Predix
+homepage_title: Predix documentation
+site_title: Predix documentation
+project_folder: nurego
+company_name: nurego
+footer_image_location: ../../common_images/company_logo.png
+github_editme_path: tomjohnson1492/documentation-theme-jekyll/edit/reviews
+disqus_shortname: idrbwjekyll
+# variables
+
+
+sidebar_tagline: Writers
+sidebar_version: Version 4.0
+theme_file: theme-green.css
+pdf_file_name: mydoc_writers_pdf.pdf
+
+# the algolia entries here are experimental only.
+
+#gems:
+#  - algoliasearch-jekyll
+#algolia:
+#  application_id: 'HXUBJERYYB'
+#  index_name:     'documentation_theme_jekyll_writers'
+port: 4009
+
+exclude:
+  - _site
+  - _drafts
+  - configs/
+  - doc/mydoc_writers*
+
+# same for all
+host: 127.0.0.1
+feedback_email: tomjohnson1492@gmail.com
+
+# these settings should work, but they don't seem to apply the right highlighting
+
+#highlighter: rouge
+#markdown: kramdown
+#kramdown:
+#  input: GFM
+#  auto_ids: true
+#  hard_wrap: false
+#  syntax_highlighter: rouge
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
